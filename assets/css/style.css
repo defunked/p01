@@ -1,0 +1,546 @@
+/* глобальные */
+
+body {
+  background-color: #edeef0;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 1.154;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2a5885;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2a5885;
+}
+
+a:visited {
+  color: #2a5885;
+}
+
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
+
+.line-through_text {
+  text-decoration: line-through;
+}
+
+/* кнопка наверх*/
+
+.top_btn_wrap {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  background-color: #dae1e8;
+  z-index: 1500;
+}
+
+.top_btn_wrap:hover {
+  background-color: #ccd5de;
+}
+
+.top_btn {
+  display: block;
+  height: 52px;
+  width: 52px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.top_btn_icon {
+  height: 25px;
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent url(../images/menu_icon.png) no-repeat 8px 4px;
+}
+
+#top {
+  border-top: 42px solid transparent;
+  margin-top: -42px;
+}
+
+/* разметка */
+
+.page_wrapper {
+  width: 1348px;
+}
+
+/* хэдер */
+
+.page_header_wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 46px;
+  background-color: #4a76a8;
+  border-bottom: 1px solid #4872a3;
+  z-index: 1000;
+}
+
+.page_header {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.page_header img {
+  position: relative;
+  top: 4px;
+}
+
+/* футер */
+
+.page_footer_wrap {
+  background-color: #939393;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}
+
+.page_footer {
+  width: 960px;
+  font-weight: 200;
+  margin: 0 auto;
+  /* padding: 50px 0; */
+  line-height: 20px;
+  /* display: inline-block;   */
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer_left_column,
+.footer_right_column {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  padding: 15px;
+}
+
+.footer_left_column {
+  text-align: right;
+  border-right: 1px solid white;
+}
+
+.footer_right_column {
+  text-align: left;
+}
+
+/* основная колонка */
+
+.page_layout {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 46px;
+  padding: 0 15px;
+  font-size: 0;
+}
+
+/* сайд бар */
+
+.page_sidebar {
+  display: inline-block;
+  width: 149px;
+  padding: 15px 0 10px;
+  margin-right: 15px;
+  vertical-align: top;
+  font-size: 13px;
+  position: sticky;
+  top: 46px;
+}
+
+.page_sidebar ol {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+/* основное меню */
+
+.nav_link {
+  color: #285473;
+  display: block;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  background-color: #e1e5eb;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.nav_link_label {
+  height: 28px;
+  line-height: 30px;
+  font-size: 12.5px;
+}
+
+.nav_link_icon {
+  height: 25px;
+  width: 35px;
+  opacity: 0.75;
+  background: transparent url(../images/menu_icon.png) no-repeat 8px -78px;
+}
+
+.icon__home {
+  background: transparent url(../images/menu_icon.png) no-repeat 8px 7px;
+}
+
+.icon__aboutme {
+  background: transparent url(../images/menu_icon.png) no-repeat 8px -76px;
+}
+
+.icon__skills {
+  background: transparent url(../images/menu_icon.png) no-repeat 8px -385px;
+}
+
+.icon__jobs {
+  background: transparent url(../images/menu_icon.png) no-repeat 8px -440px;
+}
+
+.icon__hobby {
+  background: transparent url(../images/menu_icon.png) no-repeat 8px -160px;
+}
+
+/* основная часть */
+
+.page_body {
+  display: inline-block;
+  width: 795px;
+  font-size: 0px;
+  vertical-align: top;
+}
+
+/* узкая колонка внутри основной */
+
+.narrow_column_wrap {
+  display: inline-block;
+  width: 230px;
+  margin-right: 15px;
+  vertical-align: top;
+  font-size: 13px;
+  position: sticky;
+  top: 46px;
+  /* bottom: -260px; */
+  margin-bottom: 15px;
+}
+
+/* широкая колонка внутри основной */
+
+.wide_column_wrap {
+  display: inline-block;
+  width: 550px;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.wide_column_wrap .page_block:last-child {
+  margin-bottom: 15px;
+}
+
+/* модуль: общий блок. общее */
+
+.page_block {
+  position: relative;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+/* модуль: общий блок. заголовок блока */
+
+.page_block_header {
+  height: 32px;
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 12.5px;
+  color: #000;
+}
+
+.header_label {
+  max-width: 100%;
+}
+
+.header_count {
+  padding: 0 6px;
+  color: #939393;
+}
+
+/* модуль: общий блок. основная часть */
+
+.page_block_body {
+  padding: 12px 15px 15px;
+}
+
+.line_cell {
+  line-height: 130%;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.line_cell:first-child {
+  margin-top: 0;
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.desc_info {
+  width: 147px;
+  word-wrap: break-word;
+  overflow: hidden;
+  padding: 4px 0 0 12px;
+}
+
+.group_name {
+  margin-bottom: 2px;
+}
+
+.group_desc {
+  font-size: 12px;
+  max-height: 48px;
+  overflow: hidden;
+  color: #656565;
+}
+/* модуль аватар */
+.page_photo {
+  padding: 15px;
+  height: 342px;
+}
+
+.page_avatar_img {
+  border-radius: 2px;
+}
+
+/* модуль: Основная инфа */
+
+.page_info {
+  padding: 15px 20px;
+}
+
+.page_top {
+  padding: 0 0 15px;
+  border-bottom: 1px solid #e7e8ec;
+}
+
+.page_name {
+  font-size: 19px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.profile_online_status {
+  font-size: 12.5px;
+  line-height: 18px;
+  margin-top: 5px;
+  padding-left: 10px;
+  color: #939393;
+}
+
+.page_current_info {
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(130, 130, 130);
+  margin: -5px -6px;
+  padding: 7px 6px;
+}
+
+.page_current_info a:visited {
+  color: #2a5885;
+}
+
+.profile_info {
+  padding-top: 10px;
+  line-height: 150%;
+}
+
+.profile_info_row {
+  padding-top: 5px;
+}
+
+.label {
+  color: #828282;
+  line-height: 15px;
+}
+
+.profile_info .label {
+  width: 165px;
+}
+
+/* модуль: Счётчики  */
+
+.counts_module {
+  text-align: center;
+  border-top: 1px solid #e7e8ec;
+  max-height: 69px;
+}
+
+.page_counter {
+  display: inline-block;
+  padding: 15px;
+}
+
+.count {
+  font-size: 19px;
+  color: #42648b;
+  padding-bottom: 3px;
+  line-height: 21px;
+}
+
+/* модуль: Пост */
+
+.page_block .post {
+  line-height: 14px;
+  overflow: visible;
+}
+
+.post_header {
+  min-height: 50px;
+  padding: 15px 20px 0;
+}
+
+.post_image {
+  float: left;
+}
+
+.post_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.online {
+  position: relative;
+}
+
+.online:after {
+  content: "";
+  position: absolute;
+  background-color: #8ac176;
+  border-radius: 50%;
+  right: 2%;
+  bottom: 2%;
+  border: 2px solid #fff;
+  width: 8px;
+  height: 8px;
+}
+
+.post_header_info {
+  margin-left: 65px;
+  padding-top: 8px;
+}
+
+.post_author {
+  line-height: 16px;
+  padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h5.post_author {
+  font-size: 13px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.post_date {
+  color: #939393;
+  white-space: pre;
+  font-size: 12.5px;
+  padding-top: 3px;
+}
+
+.wall_text {
+  padding: 8px 20px 20px;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  line-height: 1.462;
+  padding-top: 3px;
+  overflow: hidden;
+}
+
+.wall_text ~ img {
+  padding: 0px 20px 15px;
+}
+
+.wall_text h2 {
+  font-size: 12.5px;
+  line-height: 18px;
+  padding: 0;
+  font-weight: 400;
+  color: #939393;
+}
+
+/* лайк комент шэр*/
+
+.like_wrap {
+  padding: 0 20px;
+}
+
+.like_cont {
+  padding: 12px 0;
+  border-top: 1px solid #e7e8ec;
+}
+
+.like_btn:first-child {
+  margin-left: 0;
+}
+
+.like_btn {
+  height: 26px;
+  padding: 0 3px;
+  box-sizing: border-box;
+  margin-left: 21px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.like_btn_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.like_btn_count {
+  font-size: 14px;
+  line-height: 16px;
+  height: 16px;
+  color: #67707a;
+  display: inline-block;
+}
+
+.like .like_btn_icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ctitle%3Elike_outline_24%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%2C0H24V24H0Z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M17%2C2.9A6.43%2C6.43%2C0%2C0%2C1%2C23.4%2C9.33c0%2C3.57-1.43%2C5.36-7.45%2C10l-2.78%2C2.16a1.9%2C1.9%2C0%2C0%2C1-2.33%2C0L8.05%2C19.37C2%2C14.69.6%2C12.9.6%2C9.33A6.43%2C6.43%2C0%2C0%2C1%2C7%2C2.9a6.46%2C6.46%2C0%2C0%2C1%2C5%2C2.54A6.46%2C6.46%2C0%2C0%2C1%2C17%2C2.9ZM7%2C4.7A4.63%2C4.63%2C0%2C0%2C0%2C2.4%2C9.33c0%2C2.82%2C1.15%2C4.26%2C6.76%2C8.63l2.78%2C2.16a.1.1%2C0%2C0%2C0%2C.12%2C0L14.84%2C18c5.61-4.36%2C6.76-5.8%2C6.76-8.63A4.63%2C4.63%2C0%2C0%2C0%2C17%2C4.7c-1.56%2C0-3%2C.88-4.23%2C2.73L12%2C8.5l-.74-1.07C10%2C5.58%2C8.58%2C4.7%2C7%2C4.7Z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.comment .like_btn_icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ctitle%3Ecomment_outline_24%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%2C0H24V24H0Z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M7.84%2C22.53A2%2C2%2C0%2C0%2C1%2C7.1%2C21V18.9H5.5a3.26%2C3.26%2C0%2C0%2C1-3.4-3.4v-9A3.26%2C3.26%2C0%2C0%2C1%2C5.5%2C3.1h13a3.26%2C3.26%2C0%2C0%2C1%2C3.4%2C3.4v9a3.26%2C3.26%2C0%2C0%2C1-3.4%2C3.4H13.84l-3.72%2C3.26A1.69%2C1.69%2C0%2C0%2C1%2C7.84%2C22.53Zm4.93-5.09a1.4%2C1.4%2C0%2C0%2C1%2C.92-.35H18.5a1.47%2C1.47%2C0%2C0%2C0%2C1.6-1.6v-9a1.47%2C1.47%2C0%2C0%2C0-1.6-1.6H5.5A1.47%2C1.47%2C0%2C0%2C0%2C3.9%2C6.5v9a1.47%2C1.47%2C0%2C0%2C0%2C1.6%2C1.6H8c.7.2.7.2.9.9v2.83Z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.share .like_btn_icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ctitle%3Eshare_outline_24%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%2C0H24V24H0Z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M12.1%2C7.87V4.4a1.32%2C1.32%2C0%2C0%2C1%2C2.17-1L23.21%2C11a1.32%2C1.32%2C0%2C0%2C1%2C.15%2C1.86l-.15.15-8.94%2C7.6a1.32%2C1.32%2C0%2C0%2C1-2.17-1V16.16c-4.68.11-8%2C1.09-9.89%2C2.87a1.15%2C1.15%2C0%2C0%2C1-1.9-1.11C1.84%2C11.56%2C5.82%2C8.16%2C12.1%2C7.87Zm1.8-2.42v4.2H13c-5.3%2C0-8.72%2C2.25-10.39%2C6.86C5.06%2C15.06%2C8.53%2C14.35%2C13%2C14.35h.9v4.2L21.61%2C12Z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E");
+}
